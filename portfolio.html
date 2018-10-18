@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body,h1,h2,h3,h4,h5,h6 {font-family: "futura", sans-serif}
 </style>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
@@ -17,16 +17,102 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
+    <img src="portfolioProfile2.png" style="width:60%;" class="w3-round"><br><br>
     <h4><b>MITCH MARCUS</b></h4>
     <p class="w3-text-grey">Template by W3.CSS</p>
   </div>
   <div class="w3-bar-block">
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw w3-margin-right"></i>HOME</a>
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-blue"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
-    <a href="mitchellMarcusResume.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-file fa-fw w3-margin-right"></i>RESUME</a>
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw w3-margin-right"></i>Home</a>
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-blue"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Portfolio</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>About</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Contact</a>
+    <style>
+body {font-family: "futura", sans-serif;}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 22%;
+top: 0;
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+margin-bottom: auto;
+width: 60%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content */
+.modal-content {
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+}
+
+/* The Close Button */
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<!-- Trigger/Open The Modal -->
+<p id="myBtn"><a class="w3-bar-item w3-button w3-padding"><i class="fa fa-file fa-fw w3-margin-right"></i>Resume</a>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+<span class="close">&times;</span>
+<center><embed src="mitchellMarcusResume.pdf" width="500" height="570" type="application/pdf"></center>
+</div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+  modal.style.display = "none";
+}
+}
+</script>
   </div>
   <div class="w3-panel w3-large">
     <a href="https://www.facebook.com/mitch.marcus.5"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
@@ -48,7 +134,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
-    <h1><b>Previous Works</b></h1>
+    <h1>PREVIOUS WORKS</h1>
     <div class="w3-section w3-bottombar w3-padding-16">
       <span class="w3-margin-right">Filter:</span>
       <button class="w3-button w3-black">ALL</button>
@@ -65,34 +151,31 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <div class="w3-third w3-container w3-margin-bottom">
       <img src="huddleUp.jpg" alt="Javan" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b>Javan: A Passion For Life</b></p>
+        <p><u>Javan: A Passion For Life</u></p>
         <p>In the midst of an undefeated run with the York Capitals, Javan Matthews reflects on a life in football, and the experiences growing up that led him there.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
       <img src="blueTrumpet.jpg" alt="Blue Notes" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b>Nothing but Blues</b></p>
+        <a href="https://www.flickr.com/photos/141480434@N03/albums/72157667674474425"><p><u>Nothing but Blues</u></p>
         <p>Passions for music and photography intertwine in this set of photos. Taken at local venues here in Maryland, they showcase some of the area's finest jazz and blues musicians working their magic.</p>
-      </div>
+      </a></div>
     </div>
     <div class="w3-third w3-container">
       <img src="titleWin.jpg" alt="Victory" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b>The Final Bell</b></p>
+        <a href="https://www.flickr.com/photos/141480434@N03/albums/72157667674474425"><p><u>The Final Bell</u></p>
         <p>Few moments define an athlete's career like a championship title. This gallery captures the journey as the York Capitals climb to their first title.</p>
-      </div>
+      </a></div>
     </div>
   </div>
 
   <!-- Images of Me -->
-  <div class="w3-row-padding w3-padding-16" id="about">
-    <div class="w3-col m6">
-      <img src="/w3images/avatar_g.jpg" alt="Mitch" style="width:100%">
-    </div>
-    <div class="w3-col m6">
-      <img src="/w3images/me2.jpg" alt="TBD dynamic portrait" style="width:100%">
-    </div>
+  <div class="w3-row-padding w3-padding-8" id="about">
+    <!--div class="w3-col m8">-->
+      <center><img align="middle" src="roundedBanner.png" alt="" style="width:100%"></center>
+    <!--</div> -->
   </div>
 
   <div class="w3-container w3-padding-large" style="margin-bottom:32px">
@@ -107,7 +190,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
       <div class="w3-third w3-dark-grey">
         <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
-        <p>mitchmarcus12@gmail.com</p>
+        <a href="mitchmarcus12@gmail.com"><p>mitchmarcus12@gmail.com</p></a>
       </div>
       <div class="w3-third w3-blue">
         <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
@@ -138,41 +221,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
   <!-- Footer -->
   <footer class="w3-container w3-padding-32 w3-dark-grey">
-  <div class="w3-row-padding">
-    <div class="w3-third">
-      <h3>TESTIMONIAL</h3>
-      <p>Insert testimonial here</p>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-
-    <div class="w3-third">
-      <h3>TWITTER</h3>
-      <ul class="w3-ul w3-hoverable">
-        <li class="w3-padding-16">
-          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Lorem</span><br>
-          <span>Sed mattis nunc</span>
-        </li>
-        <li class="w3-padding-16">
-          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Ipsum</span><br>
-          <span>Praes tinci sed</span>
-        </li>
+  <center><div class="w3-row-padding">
+      <a class="twitter-timeline" href="https://twitter.com/TheMitchMarcus?ref_src=twsrc%5Etfw">Mitch on Twitter</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </ul>
-    </div>
 
-    <div class="w3-third">
-      <h3>CONTENT TAGS</h3>
-      <p>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Web Design</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Video Production</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Audio Production</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Photography</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Writing</span>
-      </p>
-    </div>
-
-  </div>
+  </div></center>
   </footer>
 
   <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
